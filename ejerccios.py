@@ -23,29 +23,35 @@ def lista_rep (lista):
     
 
 lista= [1,2,3,4,5,6,7,8,9,0]
+lis = [1,4,8,9,0,5,6,5,3]
 
-#lista_rep(lista)
+lista_rep(lista)
+lista_rep(lis)
 
 # 2)
 
-def vocales (palabra):
+def vocales (frase):
 
-    for i in range(0,len(palabra)):
+    palabras = frase.split()
 
-        p = palabra[i]
+    for i in range(0,len(palabras)):
+
+        p = palabras[i]
         
         if p.count("a") > 1 or p.count("e") > 1 or p.count("i") > 1 or p.count("o") > 1 or p.count("u") > 1 :
 
             print(p)
             break
 
-    if i == len(palabra):
+    if i == len(palabras):
         print("no existe")
             
 
-palabra =["los","estudiantes","de","programacion"]
+palabra ="los estudiantes de programacion"
+pal = "un pez es un pez"
 
-#vocales(palabra)
+vocales(palabra)
+vocales(pal)
 
 # 3)
 
@@ -67,7 +73,7 @@ def comparacion (lis1,lis2):
 lis1 = [1,2,3,4,7]
 lis2 = [1,2,6,5]
 
-#comparacion(lis1,lis2)
+comparacion(lis1,lis2)
 
 # 4)
 
@@ -83,7 +89,7 @@ def promedio (arrglo):
 
 arreglo = [1,2,3,4,5,5]
 
-#promedio(arreglo)
+promedio(arreglo)
 
 # 5)
 
